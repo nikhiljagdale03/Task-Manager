@@ -7,6 +7,8 @@ import static android.content.Context.MODE_PRIVATE;
 
 public class PreferenceHelper {
 
+    public static final String IS_lOGIN = "is_login";
+
     boolean Boolean;
     public static PreferenceHelper instance;
     SharedPreferences preferences;

@@ -13,7 +13,7 @@ public class LauncherActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing);
-        isLogin = mPreferenceHelper.getBoolean("isLogin",false);
+        isLogin = mPreferenceHelper.getBoolean(PreferenceHelper.IS_lOGIN,false);
         if (isLogin) {
             // navigate to Home Screen
         } else {
