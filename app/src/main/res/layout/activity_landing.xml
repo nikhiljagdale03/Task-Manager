@@ -4,6 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".launcher.view.LauncherActivity">
+    android:background="@mipmap/Daily_Task"
+    tools:context=".landing.view.LandingActivity">
 
+    <android.support.design.button.MaterialButton
+        android:id="@+id/login_button_landing"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="@dimen/margin_24dp"
+        android:layout_marginRight="@dimen/margin_24dp"
+        android:background="@color/landing_button_color"
+        android:text="SIGN IN"
+        android:textColor="@color/WhiteColor"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/joinTeam_button_landing"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="@dimen/margin_24dp"
+        android:layout_marginRight="@dimen/margin_24dp"
+        android:background="@color/landing_button_color"
+        android:text="join  a Team"
+        android:textColor="@color/WhiteColor"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/login_button_landing"
+
+        />
+
+    <android.support.design.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="@dimen/margin_24dp"
+        android:layout_marginRight="@dimen/margin_24dp"
+        android:background="@color/landing_button_color"
+        android:text="CREATE A TEAM"
+        android:textColor="@color/WhiteColor"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/joinTeam_button_landing" />
 </android.support.constraint.ConstraintLayout>
