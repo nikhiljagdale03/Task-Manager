@@ -11,8 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".landing.view.LandingActivity" />
-        <activity android:name=".launcher.view.LauncherActivity"></activity>
+
+        <activity android:name=".landing.view.LandingActivity"
+            android:theme="@style/MaterialTheme"/>
+
+        <activity android:name=".launcher.view.LauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

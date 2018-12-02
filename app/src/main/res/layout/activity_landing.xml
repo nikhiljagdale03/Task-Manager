@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/Daily_Task"
+    android:background="@mipmap/images"
     tools:context=".landing.view.LandingActivity">
 
     <android.support.design.button.MaterialButton
